@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW BANK APP</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- siebar start -->
+        <aside>
+            <div id="sideNav" class="sideNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#"> Home </a>
+                <a href="#">Create New Account</a>
+                <a href="#">Log In Existing Account</a>
+                <a href="#" id="signout">Sign Out</a>
+            </div>
+        </aside>
+        <!-- siebar end -->
+        
+
+         <!-- Menu Modal  -->
+         <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span id="close" class="close">&times;</span>
+              <!-- <p class="modal-Title"> New Test </p>  -->
+              <p class="modal-Text">  </p> 
+            </div> 
+          </div>
+          <!-- Menu modal end -->
+       
+
+        <!-- header section start -->
+        <div class="header-wrapper">
+            <div class="icon-wrapper">
+                <div class="menuBar" onclick="openNav()">
+                    <div class="menu-dot">
+                     <div class="light-dot pin"></div>
+                     <div class="dark-dot pin"></div>
+                    </div>
+                    <div class="menu-dot">
+                     <div class="dark-dot pin"></div>
+                     <div class="light-dot pin"></div>
+                    </div>
+                 </div>
+            </div>
+            <h2 id="header-title"> Welcome </h2>
+            <div class="icon-wrapper dateToday">
+                <i class="fa-solid fa-calendar-days "></i>
+            </div>
+        </div>
+        <!-- header section end -->
+
+        <!-- Welcome section start -->
+        <div class="welcome">
+            <div class="welcome-info">
+                <h2 id="welcome-title">PAUL's BANKING SYSTEM</h2>
+                <p class="welcome-info-text">Use the menu on the left-hand side or click the menu Icon on the top-left corner to begin</p>
+                
+            </div>
+        </div>
+        <!-- Welcome section end -->
+        
+        
+        <div class="main">
+            <!-- Balance section start -->
+        <div class="balance">
+            <h3>total balance</h3>
+            <div class="balance-amount">5,000 <span>USD</span></div>
+        </div>
+        <hr class="hr-rule">
+        <!-- Balance section end -->
+
+        <!-- Activity section start -->
+        <div class="activity">
+            <div class="activity-info">
+                <h3>Your activity</h3>
+                <div class="expense">
+                    <h3>Expense</h3>
+                    <i  class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+            <div class="graph">
+                <!-- <img src="img/graph2.jpg" alt="graph"> -->
+            </div>
+        </div>
+        <!-- Activity section end -->
+
+        <!-- Cards section start -->
+        <div class="cards">
+            <div class="current-month">
+                <p class="cm cm-1">JAN</p>
+                <p class="cm cm-2 active">FEB</p>
+                <p class="cm cm-3">MAR</p>
+                <p class="cm cm-4">APR</p>
+            </div>
+            <div class="card-profile">
+                <div class="card-dafault debit">
+                    <div class="card-title">
+                        <div class="card-name">VISA</div>
+                        <div class="date">09/3</div>
+                    </div>
+                    <div class="card-number">
+                        <div class="card-type">Debit</div>
+                        <div class="card-id">
+                            <i class="dot fa-solid fa-circle"></i>
+                            <i class="dot fa-solid fa-circle"></i>
+                            <i class="dot fa-solid fa-circle"></i>
+                            <i class="dot fa-solid fa-circle"></i> 1234
+                        </div>
+                    </div>
+                </div>
+                <div class="card-dafault credit">
+                    <div class="card-title">
+                        <div class="card-name">VISA</div>
+                        <div class="date">03/16</div>
+                    </div>
+                    <div class="card-number">
+                        <div class="card-type">Credit</div>
+                        <div class="card-id">
+                            <i class="dot fa-solid fa-circle"></i>
+                            <i class="dot fa-solid fa-circle"></i>
+                            <i class="dot fa-solid fa-circle"></i>
+                            <i class="dot fa-solid fa-circle"></i> 4321
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cards section end -->
+        </div>
+    </div>
+    
+
+
+    <script src="js/menuApp.js"></script>
+</body>
+</html>
