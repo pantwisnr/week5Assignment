@@ -6,8 +6,6 @@ const link = document.getElementsByClassName(".link");
 const dateToday = document.querySelector(".dateToday");
 
 
-
-
 /* MODAL FUNCTION START */ 
 const modal = document.getElementById("myModal");
 const modalText = document.querySelector(".modal-Text");
@@ -32,12 +30,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
 /* MODAL FUNCTION END */ 
-
-
-
-
 
 
 // ON CLICK FUNCTIONS TO START APP RUNNING
@@ -48,27 +41,6 @@ function openNav() {
 function closeNav() {
   document.getElementById("sideNav").style.width = "0";
 }
-
-// expense.addEventListener('click', (e) => {
-//   const sign = document.querySelector(".fa-angle-down");
-//   sign.classList.toggle("open");
-// });
-
-
-// this shd display today's date fix that later
-// dateToday.addEventListener('click', () => {
-//   let welcome = document.querySelector(".welcome");
-//   let main = document.querySelector(".main");
-//   welcome.style.display= "none";
-//   main.style.display= "block";
-// });
-
-
-// for(let i=0; i < link.length; i++){
-//   link[i].addEventListener("click", () => {
-//     document.getElementById("sideNav").style.width = "0";
-//   });
-// }
 
 function reCreate(){
   const myTimeout = setTimeout(() => {
@@ -85,7 +57,7 @@ function reSign(){
 }
 
 
-// functnio to check if user input is valid beofre creating account
+// function to check if user input is valid beofre creating account
 function validateForm(event) {
   event.preventDefault();
   let answer = false;
