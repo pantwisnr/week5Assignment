@@ -230,66 +230,6 @@ class Menu {
     this.removeMainSideBar();
     this.createID();
     this.createMainSideBar();
-
-  // fa.addEventListener('click', (e) => {
-  //   let main = document.querySelector(".main");
-  //   main.style.display= "none";
-  // });
-
-  // expense.addEventListener('click', (e) => {
-  //   const sign = document.querySelector(".fa-angle-down");
-  //   sign.classList.toggle("open");
-  // });
-
-
- 
-  // const newParent = document.querySelector(".sideNav");
-  // let newChildren = newParent.children;
-
-
-
-  // for(let i=0; i < newChildren.length; i++){
-    // let child = newChildren[i];
-    // newChildren[i].setAttribute("id",i);
-    // this.changeSideBar("main");
-    // newChildren[i].addEventListener("click", (e) => {
-    //   // alert(e.target.innerHTML);
-    //   // alert(e.target.getAttribute("id"));
-    //   let updated = e.target.getAttribute("id");
-    //   // selectedID (updated);
-    //   //  this.selection = e.target.getAttribute("id");
-
-
-
-    //   switch(updated) {
-    //     case "1":
-    //       closeNav();
-    //       let headerTitle = document.querySelector("#header-title");
-    //       // fix the home option
-    //       if(headerTitle.textContent == "Welcome"){
-    //       } else{
-    //         this.exit();
-    //       }
-    //       break;
-    //     case "2":
-    //       closeNav();
-    //       this.createAccount();
-    //       break;
-    //     case "3":
-    //       closeNav();
-    //       this.logIn();
-    //       break;
-    //     case "4":
-    //       closeNav();
-    //       break;
-    //     default:
-    //       closeNav();
-    //       this.selection = 0;
-    //   }
-    
-    // });
-  // }
-
 }
 
 
@@ -408,12 +348,6 @@ class Menu {
 `;
   }
 
-    /*
-    - view account debit or credit or both
-    - add account
-    - delete account 
-    - sign out
-    */ 
 
   displayDashboard(){
     let modal = document.getElementById("myModal");
@@ -426,22 +360,8 @@ class Menu {
     main.style.display= "block";
     modal.style.display = "none";
 
-    // this.createID();
-    // this.removeSideBar();
-    // this.removeMainSideBar();
-    // this.changeSideBar();
-
     this.changesideNav();
-    // do {
-    //   this.changesideNav();
-    // } while (main.style.display= "block");
-
-    // while( main.style.display= "block"){
-    //   this.changesideNav();
-    // }
   }
-
-
 
   
   addAccount(){
@@ -696,7 +616,6 @@ class Menu {
   }
 
 
-
   createMainSideBar(){
     let newSideBar = document.querySelector(".sideNav");
     let newChildren = newSideBar.children;
@@ -742,9 +661,6 @@ class Menu {
       }
     } 
   }
-
-
-
 
 
   removeMainSideBar(){
@@ -793,14 +709,9 @@ class Menu {
   }
 
 
-
-
   removeSideBar(){
     let newSideBar = document.querySelector(".sideNav");
-    // let newChildren = newSideBar.children;
     
-
-
     newSideBar.innerHTML = `
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#"> Home </a>
@@ -808,57 +719,7 @@ class Menu {
     <a href="#">Log In Existing Account</a>
     <a href="#" id="signout">Sign Out</a>
     `;
-
-    // for(let ele of newChildren){
-    //   let tabID = ele.getAttribute("id");
-
-    //   if(tabID == 1){
-    //   ele.innerHTML = "View Accounts";
-    //   ele.removeEventListener("click", () =>{
-    //     let modal = document.getElementById("myModal");
-    //     let welcome = document.querySelector(".welcome");
-    //     let main = document.querySelector(".main");
-    //     let headerTitle = document.querySelector("#header-title");
-    
-    //     headerTitle.textContent = "My Wallets";
-    //     welcome.style.display= "none";
-    //     main.style.display= "block";
-    //     modal.style.display = "none";
-    //   });
-    //   }
-
-    //   if(tabID == 2){
-    //     ele.textContent = "Add Account";
-    //     ele.removeEventListener("click", this.addAccount);
-    //   }
-
-    //   if(tabID == 3){
-    //     ele.textContent = "Delete Account";
-    //     ele.removeEventListener("click", this.deleteAccount);
-    //   }
-
-    //   if(tabID == 4){
-    //     ele.textContent = "Sign Out";
-    //     ele.style.display = "block";
-    //     ele.removeEventListener("click", () =>{
-    //       this.exit();
-    //       closeNav()
-    //       this.createMainSideBar();
-    //       ele.style.display = "none";
-    //     });
-    //   }
-    // } 
-
-
-
-
-
-
-
   }
-
-
-
 
 
 changesideNav(){
@@ -913,8 +774,6 @@ changesideNav(){
       ele.style.display = "block";
       ele.addEventListener("click", () =>{
         this.exit();
-        // this.removeMainSideBar();
-        // this.removeSideBar();
         this.removeSideBar();
         this.createID();
         this.createMainSideBar();
@@ -924,7 +783,6 @@ changesideNav(){
       });
     }
   } 
- 
 }
 
 }

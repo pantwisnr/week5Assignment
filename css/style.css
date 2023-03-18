@@ -418,8 +418,6 @@ button[class="btn"]:first-of-type{
     .container{
     width: 30rem;
     height: 40rem;
-    /* background: var(--bg-color); */
-    /* border-radius: 40px; */
     margin-block: 50px;
 
     }
@@ -433,18 +431,9 @@ button[class="btn"]:first-of-type{
         margin-block: 2rem;
     }
 
-
-    /* .cards{
-        margin-block: 2rem 1rem;
-    } */
     .card-profile{
         margin-block: 2rem 0.5rem;
     }
-    /* .card-profile .card-dafault{
-        flex-basis: 100%;
-        margin-inline: 0.75rem;
-        height: 12rem;
-    } */
 
    }
 
